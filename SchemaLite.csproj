@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA2EE9AE-9BC9-4D85-9B3F-1F78C1E22B95}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>CHART5.ICO</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>SchemaLite</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SchemaLite</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivePersonResource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Activity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActivityUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AddPersonResourceUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckListUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Observer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Person.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrintSchema.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterLicense.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResouceBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResourceBoxUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scheme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SelectedDay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SelectedWeek.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SettingsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SheetLines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityUI.resx">
+      <DependentUpon>ActivityUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPersonResourceUI.resx">
+      <DependentUpon>AddPersonResourceUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckListUI.resx">
+      <DependentUpon>CheckListUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationLabel.resx">
+      <DependentUpon>InformationLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginBox.resx">
+      <DependentUpon>LoginBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintSchema.resx">
+      <DependentUpon>PrintSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportUI.resx">
+      <DependentUpon>ReportUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceBoxUI.resx">
+      <DependentUpon>ResourceBoxUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchemaUI.resx">
+      <DependentUpon>SchemaUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsUI.resx">
+      <DependentUpon>SettingsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SheetLines.resx">
+      <DependentUpon>SheetLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
